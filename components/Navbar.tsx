@@ -7,11 +7,11 @@ const Navbar = () => {
     <nav className='max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-transparent'>
       <Link href='/' className='flex justify-center items-center'>
         <Image
-          src='/logo.svg'
+          src='/lgcar.jpeg' 
           alt='logo'
           width={118}
           height={18}
-          className='object-contain'
+          className='object-contain rounded-full items-center justify-center'
         />
       </Link>
 

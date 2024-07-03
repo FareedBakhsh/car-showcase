@@ -1,4 +1,5 @@
 
+import { CustomFilter, ShowMore } from "@/components";
 import { MouseEventHandler } from "react";
 
 export interface CustomButtonProps {
@@ -31,4 +32,41 @@ make:string;
 model:string;
 transmission:string;
 year:number;
+  }
+
+
+
+
+
+
+  // for the marquee 
+  declare module "react" {
+    interface IntrinsicElements {
+      marquee: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+    }
+  }
+
+  /* export   interfase FilterProps {
+    manufacturer: string;
+      year: number ;
+      fuel:  string ;
+      limit:  number;
+      model:  string;
+  }
+ */
+
+  export interface OptionProps {
+    title: string;
+    value: string;
+  }
+  export interface CustomFilterProps {
+    title: string;
+    options: OptionProps[];
+  }
+  
+  
+
+  export interface ShowMoreProps {
+    pageNumber: number;
+    isNext: boolean;
   }

@@ -95,6 +95,13 @@ const SearchManufacturer = ( {manufacturer,setManuFacturer} : SearchManufacturer
        </Transition>
         </div>
       </Combobox>
+
+
+
+
+
+
+      
     </div>
   )
 }
